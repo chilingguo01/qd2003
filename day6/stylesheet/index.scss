@@ -1,0 +1,165 @@
+
+@import "reset";
+@import "mixin";
+body,html{
+    height: 100%;
+    width: 100%;
+}
+a{
+    text-decoration: none;
+}
+.city_box a:hover{
+    color: red; 
+}
+.hp_box a:hover{
+    color: red;
+}
+.cfy_box a:hover{
+color: red;
+}
+.dl_box a:hover{
+    color: red;
+}
+.login_box a:hover{
+    color: red;
+}
+.header_box{
+    width: 1200px;
+    height: 90px;
+    margin: 0 auto;
+    position: relative;
+}
+.img_box1{
+    width: 108px;
+    height: 48px;
+    float: left;
+    position: absolute;
+    left: 0px;
+    top: 21px;
+}
+.header_img{
+    width: 100%;
+    height: 100%;
+}
+.city_box{
+    width: 70px;
+    height: 90px;
+    float: left;
+    margin-left:148px;
+    line-height: 90px;
+}
+.d_box{
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    left: 148px;
+    top: 10px;
+}
+.city_char{
+    display: block;
+    color: #111;
+    font-size: 16px;
+    position: absolute;
+    left: 175px;
+}
+.hp_box,.cfy_box{
+    width: 32px;
+    height: 90px;
+    float: left;
+    line-height: 90px;
+    margin-left: 18px;  
+}
+.hp_char{
+    display: block;
+    color: black;
+    font-size: 16px;
+}
+.cfy_char{
+    display: block;
+    color: #111;
+    font-size: 16px;
+}
+.eg_box{
+    width: 121px;
+    height: 38px;
+    float: right;
+    position: absolute;
+    right: 0px;
+    top: 26px;
+    border: 1px solid #ebebeb;
+    font-size: 14px;
+    color: #888;
+    line-height: 38px;
+    text-align: center;
+}
+.eg_click{
+    display: block;
+    color:  black;
+}
+.input_box{
+    width: 400px;
+    height: 44px;
+    border: 1px solid #FF1268;
+    border-top-left-radius: 46px;
+    border-bottom-left-radius: 46px;
+    border-bottom-right-radius: 46px;
+    border-top-right-radius: 46px;
+    position: absolute;
+    left: 450px;
+    top: 24px;
+}
+.seek_box{
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    top: 0px;
+    left: 6px;
+}
+input{
+    width: 250px;
+    height: 42px;
+    border: 1px solid #f8f8f8; 
+    position: absolute;
+    top: 0px;
+    left: 42px;
+}
+.search_box{
+    width: 105px;
+    height: 44px;
+    background: #FF1268;
+    border-bottom-right-radius: 27px;
+    border-top-right-radius: 27px;
+    position: absolute;
+    right: 0;
+    top: 0px;
+}
+.search_char{
+    font-size: 16px;
+    line-height: 44px;
+    color: #fff;
+    position: absolute;
+    left: 34px;
+}
+.login_box{
+    width: 32px;
+    height: 90px;
+    position: absolute;
+    left: 900px;
+}
+.login_char,.dl_char{
+    line-height: 90px;
+    color: black;
+    font-size: 16px;
+}
+.dl_box{
+    width: 32px;
+    height: 90px;
+    position: absolute;
+    left: 960px;
+}
+li { 
+    list-style: none;
+ }
+img { 
+    border: none; 
+}
