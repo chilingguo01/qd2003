@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+
+    </head>
+    <body>
+            <!-- header -->
+            <div class="header_box">
+                <div class="img_box1">
+                    <a href="">
+                        <img src="../images/01-2.png" alt="" class="header_img">
+                    </a>
+                </div>
+                <div class="eg_box">
+                    <a href="" class="eg_click">English</a> 
+                </div>
+            </div>
+            <!-- center -->
+            <div id="center_box">
+                <div class="center_img">
+                    <div class="center_imgbox">
+                        <img src="./images/mp.png" alt="">
+                    </div> 
+                    <div class="login_box">   
+                        <a href="" class="login_char"><h2>免费注册</h2></a>
+                        <div class="from_group">
+                            <input type="text" name="username" class="phone_num" placeholder="请输入手机号码">
+                        </div>
+                        <div class="from_group">    
+                            <input type="text" name="username" class="phone_num" placeholder="输入密码">
+                        </div>
+                        <div class="from_group">
+                            <input type="text" name="username" class="phone_num" placeholder="请再次输入密码">
+                        </div>
+                        <div class="alert alert-danger" role="alert">...</div>
+                        <!-- <a href="" class="login_bottom"><h2></h2></a><button>同意注册</button> -->
+                        <button id="login_bottom">注册</button>
+                    </div>
+                </div>
+            </div>
+            <!-- case -->
+            <div class="case_box">
+                <div class="case">
+                    <ul>
+                        <li>
+                            <a href="" class="case_a">帮助中心</a>
+                        </li>
+                        <li>
+                            <a href="" class="case_a">公司介绍</a>
+                        </li>
+                        <li>
+                            <a href="" class="case_a">品牌识别</a>
+                        </li>
+                        <li>
+                            <a href="" class="case_a">公司大事记</a>
+                        </li>
+                        <li>
+                            <a href="" class="case_a">协议及隐私政策</a>
+                        </li>
+                        <li>
+                            <a href="" class="case_a"> 廉正举报</a>
+                        </li>
+                        <li>
+                            <a href="" class="case_a">联系合作</a>
+                    </li>
+                        <li>
+                            <a href="" class="case_a">招聘信息</a>
+                        </li>
+                        <li class="li_bor">
+                            <a href="" class="case_a">防骗秘籍</a>
+                        </li>
+                    </ul>             
+                </div>  
+            </div>
+            <!-- footer -->
+            <div class="footer_box">
+                <div class="t1_box">
+                    <img src="../images/01-2.png" alt="" class="footer_img">
+                </div>
+                <div class="service">
+                    <h4>在线客服</h4>
+                </div> 
+                <div class="ewm_box">
+                    <img src="../images/ew.jpg" alt="" class="ewm_img">
+                    <h3>APP下载</h3>
+                </div>
+            </div>
+            <!-- <script type="module">
+                import {$post} from "../ajax.js";
+                var oBtn = document.getElementById("#login_bottom");
+                var aInputs = document.querySelectorAll(".login_box input");
+                //oBtn.onclick = antiShake(download, 1000);
+                oBtn.onclick =  function(){
+                    $post({
+                        url: "login.php",
+                        data: {
+                            username: aInputs[0].value,
+                            password: aInputs[1].value,
+                            repassword: aInputs[2].value,
+                            createTime: (new Date().getTime())
+                        },
+                        success: function(result){
+                            //console.log(result);
+                            var obj = JSON.parse(result);
+                            aAlert.style.display = 'block';
+                            if(obj.code){
+                                aAlert.className = 'alert alert-dang';
+                                aAlert.innerHTML = obj.msg;
+                            }else{
+                                aAlert.className = 'alert alert-success';
+                                aAlert.innerHTML = obj.msg;
+                                set.Timeout(() => {
+                                    location.assign("register.html");
+                                }, 500);
+                            }
+                        },
+                        error: function(msg){
+                            console.log(msg);
+                        }
+                    })
+                }
+            </script> -->
+    </body>
+</html>
